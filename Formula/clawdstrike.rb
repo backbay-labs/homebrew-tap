@@ -1,22 +1,22 @@
 class Clawdstrike < Formula
   desc "Runtime security enforcement for AI agents"
   homepage "https://github.com/backbay-labs/clawdstrike"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/backbay-labs/clawdstrike/releases/download/v#{version}/clawdstrike-darwin-aarch64.tar.gz"
-      sha256 "afe252ef40e2e0ffd2c36588110eb491508eacff19b9fb945b1f4cbbb5b264a8"
+      sha256 "9a74b7fe28c3f22789fd7a11bf9706207cb5ad7dc093921ecf06e75f9b75b807"
     else
       url "https://github.com/backbay-labs/clawdstrike/releases/download/v#{version}/clawdstrike-darwin-x86_64.tar.gz"
-      sha256 "7ffb97ce6c28167c9db33eb11d3ddd8503bc7cca7f0a6f0331afc61248a5d40e"
+      sha256 "558096e2267574854f74c7ad4cd12823f153b608750bb068f8248590d7cf06df"
     end
   end
 
   on_linux do
     url "https://github.com/backbay-labs/clawdstrike/releases/download/v#{version}/clawdstrike-linux-x86_64.tar.gz"
-    sha256 "fcbf6348e3eb48a6baccb1c2f8b5cc862017016dc66b18235aa93f34881a45ac"
+    sha256 "4b767a78f80813d86abedca9509d7e5674cbfb10aa48182041f4c79ba1e7b3d3"
   end
 
   def install
